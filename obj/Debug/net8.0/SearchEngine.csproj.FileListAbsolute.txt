@@ -1,0 +1,14 @@
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/SearchEngine
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/SearchEngine.deps.json
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/SearchEngine.runtimeconfig.json
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/SearchEngine.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/SearchEngine.pdb
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.AssemblyInfoInputs.cache
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.AssemblyInfo.cs
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.csproj.CoreCompileInputs.cache
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.dll
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/refint/SearchEngine.dll
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.pdb
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.genruntimeconfig.cache
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/ref/SearchEngine.dll
