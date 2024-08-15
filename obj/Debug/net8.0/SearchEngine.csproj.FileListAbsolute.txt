@@ -12,3 +12,13 @@
 /Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.pdb
 /Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.genruntimeconfig.cache
 /Users/samuel/C#/SearchEngine/obj/Debug/net8.0/ref/SearchEngine.dll
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.sourcelink.json
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.Core.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.Fonts.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.Package.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.Tokenization.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.Tokens.dll
+/Users/samuel/C#/SearchEngine/bin/Debug/net8.0/UglyToad.PdfPig.dll
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEngine.csproj.AssemblyReference.cache
+/Users/samuel/C#/SearchEngine/obj/Debug/net8.0/SearchEn.A5398ABC.Up2Date
