@@ -31,17 +31,18 @@ public class SearchEngineApp
     ///     Method to perform search
     /// </summary>
     /// <param name="query"></param>
-    public void Search(string query)
+    public List<string> Search(string query)
     {
         var queryKeywords = queryParser.ParseQuery(query, stopWords);
         var matchingDocuments = matchingFunction.MatchQuery(queryKeywords);
 
         // TODO: Redirects to new screen to display the below result
+        return matchingDocuments;
 
-        Console.WriteLine($"Search results for '{query}':");
-        foreach (var docId in matchingDocuments)
-        {
-            Console.WriteLine($"Document ID: {docId}");
-        }
+        // Console.WriteLine($"Search results for '{query}':");
+        // foreach (var docId in matchingDocuments)
+        // {
+        //     Console.WriteLine($"Document ID: {docId}");
+        // }
     }
 }

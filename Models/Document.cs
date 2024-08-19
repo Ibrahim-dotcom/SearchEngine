@@ -3,7 +3,7 @@
 /// </summary>
 public class Document
 {
-    public int Id { get; set; }
+    public string Id { get; set; }
     public string Content { get; set; }
 
     /// <summary>
@@ -11,7 +11,7 @@ public class Document
     /// </summary>
     /// <param name="id">The id of the document</param>
     /// <param name="content">The content of the document</param>
-    public Document(int id, string content)
+    public Document(string id, string content)
     {
         Id = id;
         Content = content;

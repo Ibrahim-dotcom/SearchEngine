@@ -3,14 +3,14 @@
 /// </summary>
 public class InvertedIndex
 {
-    private Dictionary<string, List<int>> index; // keyword : documentId pair
+    private Dictionary<string, List<string>> index; // keyword : documentId pair
 
     /// <summary>
     /// Constructs InvertedIndex and instantiates index
     /// </summary>
     public InvertedIndex()
     {
-        index = new Dictionary<string, List<int>>();
+        index = new Dictionary<string, List<string>>();
     }
 
     /// <summary>
@@ -21,7 +21,7 @@ public class InvertedIndex
     public void AddDocument(Document doc, StopWords stopWords)
     {
         // split the document to List
-        string[] words = doc.Content.Split(new[] { ' ', '.', ',', '!', '?', ';', ':', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] words = doc.Content.Split(new[] { ' ', '.', ',', '!', '?', ';', ':', '\n', '\r','\t' }, StringSplitOptions.RemoveEmptyEntries);
         
         foreach (var word in words)
         {
@@ -31,7 +31,7 @@ public class InvertedIndex
 
             if (!index.ContainsKey(keyword))
             {
-                index[keyword] = new List<int>();
+                index[keyword] = new List<string>();
             }
             
             if (!index[keyword].Contains(doc.Id))
@@ -46,7 +46,7 @@ public class InvertedIndex
     /// </summary>
     /// <param name="keyword"></param>
     /// <returns>Returns List of documentsId</returns>
-    public List<int> Search(string keyword)
+    public List<string> Search(string keyword)
     {
         keyword = keyword.ToLower();
 
@@ -54,6 +54,6 @@ public class InvertedIndex
         {
             return index[keyword];
         }
-        return new List<int>();
+        return new List<string>();
     }
 }

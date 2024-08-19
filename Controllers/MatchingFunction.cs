@@ -19,9 +19,9 @@ public class MatchingFunction
     /// </summary>
     /// <param name="queryKeywords">The keywords to count its frequency</param>
     /// <returns>Returns ordered List of documentIds</returns>
-    public List<int> MatchQuery(List<string> queryKeywords)
+    public List<string> MatchQuery(List<string> queryKeywords)
     {
-        var documentIds = new Dictionary<int, int>();
+        var documentIds = new Dictionary<string, int>();
 
         foreach (var keyword in queryKeywords)
         {

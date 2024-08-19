@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/samuel/C#/SearchEngine/SearchEngine.csproj": {}
+    "C:\\Users\\Asus\\SearchEngine3\\SearchEngine\\SearchEngine.csproj": {}
   },
   "projects": {
-    "/Users/samuel/C#/SearchEngine/SearchEngine.csproj": {
+    "C:\\Users\\Asus\\SearchEngine3\\SearchEngine\\SearchEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/samuel/C#/SearchEngine/SearchEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\SearchEngine3\\SearchEngine\\SearchEngine.csproj",
         "projectName": "SearchEngine",
-        "projectPath": "/Users/samuel/C#/SearchEngine/SearchEngine.csproj",
-        "packagesPath": "/Users/samuel/.nuget/packages/",
-        "outputPath": "/Users/samuel/C#/SearchEngine/obj/",
+        "projectPath": "C:\\Users\\Asus\\SearchEngine3\\SearchEngine\\SearchEngine.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\SearchEngine3\\SearchEngine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/samuel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -40,12 +42,40 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Aspose.Slides.NET": {
+              "target": "Package",
+              "version": "[24.8.0, )"
+            },
+            "Aspose.Words": {
+              "target": "Package",
+              "version": "[24.8.0, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.63, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
             "PdfPig": {
               "target": "Package",
               "version": "[0.1.8, )"
+            },
+            "Xceed.Words.NET": {
+              "target": "Package",
+              "version": "[3.0.24152.1219, )"
             }
           },
           "imports": [
@@ -62,9 +92,12 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
