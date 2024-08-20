@@ -10,6 +10,7 @@ using System.Windows.Forms;
         private TextBox detailsTextBox;
         private TableLayoutPanel mainLayout;
         private SearchEngineApp app = new SearchEngineApp();
+
         List<Document> documents = [];
 
             
@@ -41,6 +42,7 @@ using System.Windows.Forms;
                     }
 
                 }
+            
 
             }catch(IOException e){
                 Console.WriteLine("Error: " + e);
@@ -52,15 +54,19 @@ using System.Windows.Forms;
                 app.AddDocument(doc);
             }
 
+
+
+
             // InitializeComponent();
             SetupControls();
+
+
         }
 
         private void SetupControls()
         {
 
 
-  
             // Initialize components
             searchTextBox = new TextBox();
             searchButton = new Button();
@@ -120,6 +126,10 @@ using System.Windows.Forms;
             resultsListView.Resize += new EventHandler(AdjustColumnWidths);
         }
 
+
+
+
+
         private void AdjustColumnWidths(object sender, EventArgs e)
         {
             int totalWidth = resultsListView.Width;
@@ -131,17 +141,15 @@ using System.Windows.Forms;
         {
             
             string query = searchTextBox.Text;
-            List<string> result = app.Search(query);
+            Dictionary<string, float> result = app.Search(query);
 
-            // Example search results (replace with your search logic)
             resultsListView.Items.Clear();
             foreach(var item in result)
             {
-                resultsListView.Items.Add(new ListViewItem([$"{item}"]));
+                resultsListView.Items.Add(new ListViewItem([$"{item.Key}", $"{item.Value}%" ]));
             }
-            // resultsListView.Items.Add(new ListViewItem(["Document 1", "85%"]));
-            // resultsListView.Items.Add(new ListViewItem(new[] { "Document 2", "78%" }));
-            // resultsListView.Items.Add(new ListViewItem(new[] { "Document 3", "65%" }));
+
+
         }
 
     private void resultsListView_SelectedIndexChanged(object sender, EventArgs e)

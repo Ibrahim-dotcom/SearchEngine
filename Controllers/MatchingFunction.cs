@@ -19,9 +19,9 @@ public class MatchingFunction
     /// </summary>
     /// <param name="queryKeywords">The keywords to count its frequency</param>
     /// <returns>Returns ordered List of documentIds</returns>
-    public List<string> MatchQuery(List<string> queryKeywords)
+    public Dictionary<string, float> MatchQuery(List<string> queryKeywords)
     {
-        var documentIds = new Dictionary<string, int>();
+        var documentIds = new Dictionary<string, float>();
 
         foreach (var keyword in queryKeywords)
         {
@@ -37,7 +37,14 @@ public class MatchingFunction
             }
         }
 
+        foreach(var docId in documentIds)
+        {
+            documentIds[docId.Key] = (docId.Value / queryKeywords.Count) * 100;
+        }
+
         // Sort documents by frequency of matched keywords : From high to low using LINQ to Object
-        return documentIds.OrderByDescending(pair => pair.Value).Select(pair => pair.Key).ToList();
+        //return documentIds.OrderByDescending(pair => pair.Value).Select(pair => pair.Key).ToList();
+        return documentIds.OrderByDescending(pair => pair.Value).ToDictionary<string, float>();
+
     }
 }

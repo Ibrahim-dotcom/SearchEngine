@@ -3,7 +3,7 @@
 /// </summary>
 public class InvertedIndex
 {
-    private Dictionary<string, List<string>> index; // keyword : documentId pair
+    public Dictionary<string, List<string>> index; // keyword : documentId pair
 
     /// <summary>
     /// Constructs InvertedIndex and instantiates index

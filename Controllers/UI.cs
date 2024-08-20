@@ -5,7 +5,7 @@ using System;
 /// </summary>
 public class SearchEngineApp
 {
-    private InvertedIndex index;
+    public InvertedIndex index;
     private QueryParser queryParser;
     private MatchingFunction matchingFunction;
     private StopWords stopWords;
@@ -31,7 +31,7 @@ public class SearchEngineApp
     ///     Method to perform search
     /// </summary>
     /// <param name="query"></param>
-    public List<string> Search(string query)
+    public Dictionary<string, float> Search(string query)
     {
         var queryKeywords = queryParser.ParseQuery(query, stopWords);
         var matchingDocuments = matchingFunction.MatchQuery(queryKeywords);
